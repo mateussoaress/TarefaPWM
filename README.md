@@ -142,3 +142,19 @@ Após a fase inicial, o loop faz o servo se movimentar continuamente entre **0°
 ---
 
 Este programa fornece um **controle preciso e visual** do servo com um LED RGB.
+
+# Link do Vídeo de Explicação:
+
+https://www.dropbox.com/scl/fi/r4m4lxnx7tyx8o69bnluy/Video_explicacao2.mp4?rlkey=0usrpz3aljz7yoe92qu501igk&st=rha7cjqh&dl=0
+
+# Observações do Experimento com a Ferramenta Educacional BitDogLab
+
+Ao realizar o experimento utilizando a BitDogLab, observou-se que o LED RGB conectado à GPIO 12 variava sua intensidade de brilho de acordo com a posição do servomotor. Isso ocorre porque a intensidade do LED é ajustada proporcionalmente ao ciclo ativo do PWM aplicado ao servo. As principais observações foram:
+
+1. Quando o servo estava na posição de 0 graus (500µs), o LED apagava, indicando o menor nível de duty cycle.
+
+2. Ao movimentar o servo para a posição de 90 graus (1470µs), o LED aumentava seu brilho para um nível intermediário, representando a posição central do servo.
+
+3. Quando o servo atingia a posição de 180 graus (2400µs), o LED apresentava brilho máximo, refletindo o duty cycle máximo configurado.
+
+4. Durante a movimentação suave do servo entre 0° e 180°, foi perceptível que o LED aumentava e diminuía gradativamente sua intensidade, demonstrando um comportamento sincronizado com o deslocamento do servomotor.
