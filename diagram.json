@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "author": "Mateus Soares",
+    "editor": "wokwi",
+    "parts": [
+      { "type": "board-pi-pico-w", "id": "pico", "top": 0, "left": 0, "attrs": {} },
+      { "type": "wokwi-servo", "id": "servo1", "top": 17.2, "left": 105.6, "attrs": {} }
+    ],
+    "connections": [
+      [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+      [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+      [ "pico:GND.8", "servo1:GND", "#8f4814", [ "h0" ] ],
+      [ "pico:GP22", "servo1:PWM", "orange", [ "h0" ] ],
+      [ "pico:3V3", "servo1:V+", "red", [ "h13.46", "v25.55" ] ]
+    ],
+    "dependencies": {}
+  }
